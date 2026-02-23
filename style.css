@@ -1,0 +1,45 @@
+
+.carrossel {
+  position: relative;
+  width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
+
+.carrossel img {
+  width: 100%;
+  display: none; 
+  user-select: none; 
+}
+
+.carrossel img.ativa {
+  display: block; 
+}
+
+.botao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: rgb(202, 13, 13);
+  font-size: 2rem;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  user-select: none;
+}
+
+#anterior {
+  left: 10px;
+}
+
+#proximo {
+  right: 10px;
+}
+
+.botao:hover {
+  background-color: rgba(0,0,0,0.8);
+}
